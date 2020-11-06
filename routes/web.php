@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('sendmail', [MailController::class, 'sendmail']);
+Route::resource('image', ImageController::class)->names(['store' => 'image.build']);
+Route::resource('image.comment', ImageController::class);
