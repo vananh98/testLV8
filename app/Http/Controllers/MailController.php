@@ -13,8 +13,8 @@ class MailController extends Controller
     {
         $details = [
             'title' => 'Test mail',
-            'content' => 'Oke'
+            'content' => 'Bên dưới'
         ];
-        Mail::to("anhcdcn98@gmail.com")->send(new testMail($details));
+        Mail::to("thanhson.itnic@gmail.com")->send(new testMail($details));
     }
 }
