@@ -9,7 +9,7 @@
 
 <body>
     <h1>{{$details['title']}}</h1>
-    <h1>{{$details['content']}}</h1>
+    <h1>Nội dung{{$details['content']}}</h1>
 </body>
 
 </html>
